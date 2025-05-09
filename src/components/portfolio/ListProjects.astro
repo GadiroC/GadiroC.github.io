@@ -18,29 +18,36 @@ allPosts.sort(
     id="containerProjects"
     class="mx-auto max-w-7xl grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-5 p-2 py-4 max-h-[150vh] overflow-hidden transition-[max-height] duration-500 ease-in-out"
   >
-    {
-      allPosts.map((post) => (
-        <Project
-          url={post.url}
-          title={post.frontmatter.title}
-          description={post.frontmatter.description}
-          date={post.frontmatter.pubDate}
-          languages={post.frontmatter.languages}
-          image={post.frontmatter.image}
-        />
-      ))
-    }
+    <Project
+      url="https://github.com/Diegosoltri/Ecoespacio-digital-TEC"
+      title="Greenify"
+      description="Aplicacion desarrollada para ecoespacio, en la cual se busca ayudar contra la contaminacion."
+      date="2024-05-12"
+      
+      image="../../../images/Grenify.jpg"
+    />
+    <Project
+      url="https://github.com/GadiroC/toposFc"
+      title="Topos FC"
+      description="Pagina para organizar el torneo de equipos de Futbol, teniendo como reto, el ser inclusivo con personas con deficiencia visual "
+      date="2023-06-01"
+      
+      image="../../../images/toposfc.jpg"
+    />
+    <Project
+      url="https://bitbucket.org/proyectos-tec-itc/ph-frontend/src/main/"
+      title="Patrones hermosos"
+      description="Pagina para poder administrar un Bootcamp de programacion especializado en mujeres "
+      date="2025-05-01"
+      languages={['JavaScript', 'React']}
+      image="../../../images/patronesHermosos.jpg"
+    />
   </div>
 
   <div
     id="moreProjects"
     class="absolute bottom-0 left-0 w-full flex justify-center text-center bg-gradient-to-t from-[#FBFEFD] dark:from-[#0e0e10] from-55% to-transparent to-100% pb-30 pt-52"
   >
-    <button
-      class="absolute font-bold cursor-pointer text-mint-400 dark:text-mint-100 hover:text-mint-500 dark:hover:text-mint-300 transition-all"
-    >
-      View More Projects...
-    </button>
   </div>
 </section>
 

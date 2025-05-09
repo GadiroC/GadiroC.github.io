@@ -9,6 +9,9 @@ export const languages: Record<string, Language> = {
     name: "Angular",
     iconName: "angular",
   },
+
+    
+
   astro: {
     name: "Astro",
     iconName: "astro",
@@ -110,6 +113,8 @@ export const languages: Record<string, Language> = {
     name: "Python",
     iconName: "python",
   },
+
+
 };
 
 export const getLanguage = (lang: string): Language => {
