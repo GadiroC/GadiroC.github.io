@@ -78,6 +78,7 @@ const  {
   </span>. Me motiva construir experiencias digitales que inspiren, resuelvan problemas reales y conecten con las personas. 
 </p>
 
+
         <div class="flex gap-4 max-sm:flex-col max-sm:items-center">
           <Button
             link={"mailto:" + email}
@@ -90,13 +91,20 @@ const  {
     </div>
   </div> 
 
+  
 
   <div
-    class="mx-auto grid max-w-7xl grid-cols-2 grid-rows-4 max-sm:gap-3 gap-4 max-md:h-[80vh] max-sm:h-[900px] max-xl:h-[550px] xl:h-[700px] md:grid-cols-4 md:grid-rows-2"
-  >
+  class="mx-auto grid max-w-7xl grid-cols-2 grid-rows-4 gap-4 
+         max-sm:grid-cols-1 max-sm:grid-rows-[repeat(5,auto)] max-sm:h-auto
+         md:grid-cols-4 md:grid-rows-2"
+
+>
+
+
     <!-- NUEVO CUADRO (al lado de Hobbies original) -->
 <div
-  class="col-start-3 row-start-2 flex flex-col gap-3 rounded-2xl border border-emerald-50 bg-gradient-to-r from-riptide-200 to-mint-200 p-8 dark:border-zinc-800 dark:border-2 dark:bg-zinc-800 dark:bg-gradient-radial dark:from-riptide-500 dark:to-mint-500 max-md:gap-0 max-xl:p-5 max-md:p-4 max-lg:gap-1"
+  class="col-start-3 row-start-2 flex flex-col gap-3 rounded-2xl border border-emerald-50 bg-gradient-to-r from-riptide-200 to-mint-200 p-8 dark:border-zinc-800 dark:border-2 dark:bg-zinc-800 dark:bg-gradient-radial dark:from-riptide-500 dark:to-mint-500 
+         max-sm:col-start-1 max-sm:row-start-3 max-sm:p-4 max-sm:min-h-[250px]"
 >
   <div class="flex flex-col-reverse items-start gap-4 max-md:gap-2">
     <Heading text="Estudios" level={3} />
