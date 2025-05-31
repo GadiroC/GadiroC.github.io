@@ -65,10 +65,7 @@ export const languages: Record<string, Language> = {
     name: "Markdown",
     iconName: "markdown",
   },
-  php: {
-    name: "PHP",
-    iconName: "php",
-  },
+ 
   sass: {
     name: "Sass",
     iconName: "sass",
@@ -114,6 +111,25 @@ export const languages: Record<string, Language> = {
     iconName: "python",
   },
 
+  react: {
+    name: "React",
+    iconName: "reacts",
+  },
+
+  jira: {
+    name: "Jira",
+    iconName: "jira",
+  },
+
+  github: {
+    name: "Github",
+    iconName: "github",
+  },
+
+  inskape: {
+    name: "Inskape",
+    iconName: "inskape",
+  },
 
 };
 

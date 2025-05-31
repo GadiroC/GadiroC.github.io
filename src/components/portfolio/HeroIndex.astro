@@ -6,7 +6,7 @@ import { Icon } from "astro-icon/components";
 import Hobbies from "../portfolio/Hobbies.astro";
 
 const  {
-  profileImage = "/images/gadiro-Formal.jpg",
+  profileImage = "/images/FotoFormal.jpg",
   profileAlt = "Foto de Gadiro Cano Sánchez para el blog",
   profileLink = "/about-me",
   profileTitle = "FrontEnd Developer",
@@ -14,7 +14,7 @@ const  {
   
   githubText = "¿Te gusta el diseño de este sitio?",
   portfolioImage = "/images/portfolio.webp",
-  email = "hello@efeele.dev",
+  email = "gadiro.cano@gmail.com",
 } = Astro.props;
 ---
 
@@ -39,14 +39,10 @@ const  {
           <div class="relative z-20 flex w-full rounded-full bg-mint-900">
             <div
               class="w-full aspect-square rounded-full bg-center bg-cover"
-              style={`background-image: url(${profileImage})`}
+              style={`background-image: url(${profileImage}); background-position: center 30%;`}
               aria-label={profileAlt}
             >
-              <a
-                href={profileLink}
-                class="flex h-full w-full"
-                aria-label="Ir a la página sobre mí"
-              ></a>
+             
             </div>
           </div>
         </div>
@@ -74,7 +70,7 @@ const  {
 >
   <span
     class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent dark:from-riptide-300 dark:to-mint-200"
-    >FrontEnd Developer</span> especializado en interfaces web modernas, con conocimientos sólidos en backend cuando el proyecto lo requiere.
+    >FrontEnd Developer</span> especializado en interfaces web modernas, diseño UX/UI, con conocimientos sólidos en backend cuando el proyecto lo requiere.
   <span
     class="bg-gradient-to-r from-riptide-500 to-mint-500 bg-clip-text font-black text-transparent dark:from-riptide-300 dark:to-mint-200"
   >
@@ -93,26 +89,61 @@ const  {
       </div>
     </div>
   </div> 
+
+
   <div
     class="mx-auto grid max-w-7xl grid-cols-2 grid-rows-4 max-sm:gap-3 gap-4 max-md:h-[80vh] max-sm:h-[900px] max-xl:h-[550px] xl:h-[700px] md:grid-cols-4 md:grid-rows-2"
   >
-    <div
-      class="col-start-2 row-start-2 flex flex-col gap-3 rounded-2xl border border-emerald-50 bg-gradient-to-r from-riptide-200 to-mint-200 p-8 dark:border-zinc-800 dark:border-2 dark:bg-zinc-800 dark:bg-gradient-radial dark:from-riptide-500 dark:to-mint-500 max-md:gap-0 max-xl:p-5 max-md:p-4 max-lg:gap-1 md:col-start-4"
-    >
-      <div class="flex flex-col-reverse items-start gap-4 max-md:gap-2">
-        <Heading text="Hobbies " level={3} />
-      </div>
+    <!-- NUEVO CUADRO (al lado de Hobbies original) -->
+<div
+  class="col-start-3 row-start-2 flex flex-col gap-3 rounded-2xl border border-emerald-50 bg-gradient-to-r from-riptide-200 to-mint-200 p-8 dark:border-zinc-800 dark:border-2 dark:bg-zinc-800 dark:bg-gradient-radial dark:from-riptide-500 dark:to-mint-500 max-md:gap-0 max-xl:p-5 max-md:p-4 max-lg:gap-1"
+>
+  <div class="flex flex-col-reverse items-start gap-4 max-md:gap-2">
+    <Heading text="Estudios" level={3} />
+  </div>
+  <div class="overflow-y-auto text-sm dark:text-white space-y-4">
+<div>
+    <p class="text-xs font-semibold uppercase text-mint-800 dark:text-mint-500 tracking-wider">
+      Universidad Tecnológica de Tlaxcala
+    </p>
+    <p class="text-sm font-medium text-blacktext dark:text-white">
+      Licenciatura en Desarrollo de Negocios, Área Mercadotecnia
+    </p>
+    <p class="text-xs text-gray-800 dark:text-gray-500">Agosto 2021 - Presente</p>
+  </div>
 
-      <div class="overflow-y-auto">
-        <Hobbies />
-      </div>
+  <div>
+    <p class="text-xs font-semibold uppercase text-mint-800 dark:text-mint-500 tracking-wider">
+      Tecnológico de Monterrey, Campus Puebla
+    </p>
+    <p class="text-sm font-medium text-blacktext dark:text-white">
+      Ingeniería en Tecnologías Computacionales
+    </p>
+    <p class="text-xs text-gray-600 dark:text-gray-400">Agosto 2021 - Presente</p>
+  </div>
+  </div>
+</div>
+
+  <!-- HOBBIES ORIGINAL (derecha) -->
+  <div
+    class="col-start-2 row-start-2 flex flex-col gap-3 rounded-2xl border border-emerald-50 bg-gradient-to-r from-riptide-200 to-mint-200 p-8 dark:border-zinc-800 dark:border-2 dark:bg-zinc-800 dark:bg-gradient-radial dark:from-riptide-500 dark:to-mint-500 max-md:gap-0 max-xl:p-5 max-md:p-4 max-lg:gap-1 md:col-start-4"
+  >
+    <div class="flex flex-col-reverse items-start gap-4 max-md:gap-2">
+      <Heading text="Hobbies" level={3} />
     </div>
+    <div class="overflow-y-auto">
+      <Hobbies />
+    </div>
+  </div>
+    
 
     
 
     <div
       class="col-span-2 col-start-1 row-start-1 rounded-2xl bg-gradient-to-r from-mint-300 dark:from-mint-600 to-mint-50 dark:to-mint-200/5  hover:to-mint-300/30 dark:hover:to-mint-600/30 p-[.2rem] md:col-start-3"
     >
+
+    
       <article
         class="group relative z-0 flex h-full w-full flex-col overflow-hidden rounded-2xl bg-gradient-to-tr from-riptide-100 to-mint-100 p-6 transition hover:shadow-[0_10px_50px_rgba(13,_188,_130,_0.2)] dark:bg-gradient-to-r dark:from-mint-900 dark:to-mint-950 dark:overflow-hidden max-md:p-4 gap-6 max-md:gap-3 max-lg:gap-4 dark:before:[background-image:radial-gradient(circle,_rgba(13,188,130)_0,_rgba(1,45,34)_100%)] before:[background-image:radial-gradient(circle,_rgba(95,255,202)_0,_rgba(144,253,210)_100%)] before:absolute before:left-30 before:-bottom-0 before:h-[80%] before:aspect-square before:rounded-full before:blur-3xl dark:before:opacity-80 before:opacity-30 before:-z-10 before:transition"
       >
